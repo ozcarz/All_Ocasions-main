@@ -3,7 +3,7 @@
 #include "motor.h"
 #include "sensors.h"
 #include "pre_auton.h"
-#include "autonomous.h"
+#include "autonomous(original).h"
 #include "manual.h"
 
 using namespace vex;
@@ -55,3 +55,4 @@ int main() {
     }
 }
 
+///sdfjksldjflksjdfklsjlkdf
