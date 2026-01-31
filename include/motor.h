@@ -18,14 +18,8 @@ extern motor RightMotorB;
 extern motor_group RightMotorGroup;
 
 extern drivetrain Drive;
-// Motor intake system orginally labeled as "Intake/Outake"
-extern motor IntakeLeft;
-extern motor IntakeRight;
-extern motor Midtake;
-
-extern motor RightOutake;
-extern motor LeftOutake;
-extern motor MidOutake;
+// Motor intake/outtake system - single motor on PORT9
+extern motor IntakeOutake;
 
 #endif
 

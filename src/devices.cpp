@@ -23,14 +23,7 @@ drivetrain Drive(LeftMotorGroup, RightMotorGroup,
                  config::WHEELBASE_MM, mm, config::EXTERNAL_GEAR_RATIO);
 
 // ---- Intake/Outake ----
-motor IntakeLeft  = motor(PORT16, INTAKE_RATIO, config::INTAKE_LEFT_REVERSED);
-motor IntakeRight = motor(PORT5,  INTAKE_RATIO, config::INTAKE_RIGHT_REVERSED);
-motor Midtake     = motor(PORT8,  ratio18_1,    config::MIDTAKE_REVERSED);
-
-motor RightOutake = motor(PORT7,  OUTAKE_RATIO, config::RIGHT_OUTAKE_REVERSED);
-// LeftOutake moved from PORT2 -> PORT14 to free PORT2 for left motor
-motor LeftOutake  = motor(PORT14, OUTAKE_RATIO, config::LEFT_OUTAKE_REVERSED);
-motor MidOutake   = motor(PORT20, OUTAKE_RATIO, config::MID_OUTAKE_REVERSED);
+motor IntakeOutake = motor(PORT9, ratio18_1, false);
 
 // ---- Sensors (DIRECT PORTS; no config port constants) ----    
 // Change these if your wiring differs:
